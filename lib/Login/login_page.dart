@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 120,),
+                const SizedBox(height: 50,),
                 Row(
                   children: [
                     SizedBox(
@@ -233,6 +233,23 @@ class _LoginPageState extends State<LoginPage> {
                   icon: const Icon(Icons.settings),
                   label: Text(
                     "Configure Settings",
+                    style: GoogleFonts.audiowide(color:Colors.black, fontSize: 15),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              SizedBox(
+                width: 250,
+                height: 50,
+                child: ElevatedButton.icon(
+                  onPressed: () async {
+                    Navigator.of(context).pushNamed('register');
+                  },
+                  icon: const Icon(Icons.app_registration),
+                  label: Text(
+                    "Register",
                     style: GoogleFonts.audiowide(color:Colors.black, fontSize: 15),
                   ),
                 ),

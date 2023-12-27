@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watchtower/Login/login_page.dart';
 import 'package:watchtower/Logout/loading_page.dart';
+import 'package:watchtower/Register/register_user.dart';
 
 import 'Admin/create_userpage.dart';
 import 'Common/dashboard_page.dart';
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
       home: const LoginPage(),
       routes: {
         'settings': (context) => DeviceConfigPage(),
+        'register': (context) => RegisterUserPage(),
         'dashboard': (context) => DashBoardPage(),
         'loadingpage': (context) => WhiteBackgroundScreen(),
         'login': (context) => const LoginPage(),
